@@ -21,9 +21,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(checkLocationPermission), name: Notification.Name.UIApplicationWillEnterForeground, object: nil)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    @objc func checkLocationPermission() {
         if CLLocationManager.locationServicesEnabled() {
             getCurrentLocation()
         } else {
@@ -31,7 +33,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             
             self.present(viewController, animated: false, completion: nil)
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        checkLocationPermission()
     }
 
     override func didReceiveMemoryWarning() {

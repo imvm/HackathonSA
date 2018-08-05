@@ -6,19 +6,21 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Not Available View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="GPSNotAvailableView" id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GPSNotAvailableView" id="BYZ-38-t0r" customClass="GPSNotAvailableViewController" customModule="HackathonSA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agn-Wf-L8D">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hey," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Agn-Wf-L8D">
                                 <rect key="frame" x="56" y="177" width="97" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" red="0.019607843137254902" green="0.32941176470588235" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -30,10 +32,13 @@
                                 <color key="textColor" red="0.019607843137254902" green="0.32941176470588235" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfW-zW-r9K">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfW-zW-r9K">
                                 <rect key="frame" x="236" y="518" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismissView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAk-f6-uh6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.76470588235294112" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,52 +54,57 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dismissPermissionViewButton" destination="QfW-zW-r9K" id="kDc-2J-dQz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.625" y="100.35211267605634"/>
+            <point key="canvasLocation" x="-124" y="843"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="82a-Gw-UEV">
             <objects>
-                <viewController id="7en-IR-t9Q" customClass="ViewController" customModule="HackathonSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="7en-IR-t9Q" customClass="ViewController" customModule="HackathonSA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ihq-Uj-RuN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="beach Y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Li-nM-yKO">
-                                <rect key="frame" x="139" y="106" width="85" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="beach Y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Li-nM-yKO">
+                                <rect key="frame" x="118" y="162" width="85" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EU2-eA-WZJ">
-                                <rect key="frame" x="40" y="202" width="225" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="35"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="check my beach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrK-RV-zga">
-                                <rect key="frame" x="89" y="461" width="126" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="check my beach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrK-RV-zga">
+                                <rect key="frame" x="97" y="372" width="126" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WuQ-P1-d4d">
+                                <rect key="frame" x="106.5" y="226" width="107" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WuQ-P1-d4d" secondAttribute="height" multiplier="1:1" id="3b8-QX-GFT"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9Li-nM-yKO" firstAttribute="centerY" secondItem="JE6-0q-GMg" secondAttribute="centerY" multiplier="0.6" id="1dK-Tm-DCJ"/>
+                            <constraint firstItem="rrK-RV-zga" firstAttribute="centerX" secondItem="JE6-0q-GMg" secondAttribute="centerX" id="QL5-vC-klI"/>
+                            <constraint firstItem="9Li-nM-yKO" firstAttribute="centerX" secondItem="JE6-0q-GMg" secondAttribute="centerX" id="WGy-oK-X6O"/>
+                            <constraint firstItem="WuQ-P1-d4d" firstAttribute="centerX" secondItem="JE6-0q-GMg" secondAttribute="centerX" id="WQv-Xm-p0d"/>
+                            <constraint firstItem="WuQ-P1-d4d" firstAttribute="width" secondItem="Ihq-Uj-RuN" secondAttribute="width" multiplier="1/3" id="o8G-xz-yf1"/>
+                            <constraint firstItem="WuQ-P1-d4d" firstAttribute="centerY" secondItem="JE6-0q-GMg" secondAttribute="centerY" multiplier="0.95" id="rWJ-4P-NFY"/>
+                            <constraint firstItem="rrK-RV-zga" firstAttribute="centerY" secondItem="JE6-0q-GMg" secondAttribute="centerY" multiplier="1.3" id="xI2-Co-3yU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JE6-0q-GMg"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Adf-at-s2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="100"/>
+            <point key="canvasLocation" x="834" y="843"/>
         </scene>
     </scenes>
 </document>

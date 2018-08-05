@@ -16,6 +16,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // Setting the Appropriate initialViewController
+        
+        // Set the window to the dimensions of the device
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // Grab a reference to whichever storyboard you have the ViewController within
+        
+        // Grab a reference to the ViewController you want to show 1st.
+        var initialViewController: UIViewController
+        let firstLaunch = FirstLaunch(userDefaults: .standard, key: "com.any-suggestion.FirstLaunch.WasLaunchedBefore")
+        if firstLaunch.isFirstLaunch {
+            let storyboard = UIStoryboard(name: "Onboarding", bundle: nil)
+            initialViewController = storyboard.instantiateViewController(withIdentifier: "OnboardingViewController")
+        } else {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            initialViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+        }
+        
+        
+        // Set that ViewController as the rootViewController
+        self.window?.rootViewController = initialViewController
+        
+        // Sets our window up in front
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		12962B715A430C3C1B2A1163 /* Pods_HackathonSATests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700A8679F1A195284CC27402 /* Pods_HackathonSATests.framework */; };
+		2B22ECA32117580500EC1A71 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B22ECA22117580500EC1A71 /* Onboarding.storyboard */; };
+		2B22ECA52117602800EC1A71 /* GPSNotAvailableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22ECA42117602800EC1A71 /* GPSNotAvailableViewController.swift */; };
 		2B679932211644F000554880 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679931211644F000554880 /* AppDelegate.swift */; };
 		2B679934211644F000554880 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679933211644F000554880 /* ViewController.swift */; };
 		2B679937211644F000554880 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B679935211644F000554880 /* Main.storyboard */; };
@@ -16,6 +18,10 @@
 		2B679947211644F100554880 /* HackathonSATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679946211644F100554880 /* HackathonSATests.swift */; };
 		2B679952211644F100554880 /* HackathonSAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679951211644F100554880 /* HackathonSAUITests.swift */; };
 		2B679B7821168F7300554880 /* BathingQualityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679B7721168F7300554880 /* BathingQualityService.swift */; };
+		2B679B80211744C800554880 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679B7F211744C700554880 /* OnboardingViewController.swift */; };
+		2B679B8221174B3500554880 /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679B8121174B3500554880 /* Page1ViewController.swift */; };
+		2B679B8421174B4300554880 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679B8321174B4300554880 /* Page2ViewController.swift */; };
+		2B679B862117511C00554880 /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679B852117511C00554880 /* FirstLaunch.swift */; };
 		B376A1436980BA0124654176 /* Pods_HackathonSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40C6434015D5E95CBE6F4CB /* Pods_HackathonSA.framework */; };
 		FAB874B1994595FA9F76F77F /* Pods_HackathonSAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ABA428E3C92405B6306EF9 /* Pods_HackathonSAUITests.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		18EBCEA5EB47A34B93026685 /* Pods-HackathonSAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonSAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonSAUITests/Pods-HackathonSAUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B22ECA22117580500EC1A71 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		2B22ECA42117602800EC1A71 /* GPSNotAvailableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSNotAvailableViewController.swift; sourceTree = "<group>"; };
 		2B67992E211644F000554880 /* HackathonSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B679931211644F000554880 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B679933211644F000554880 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +61,10 @@
 		2B679951211644F100554880 /* HackathonSAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonSAUITests.swift; sourceTree = "<group>"; };
 		2B679953211644F100554880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B679B7721168F7300554880 /* BathingQualityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathingQualityService.swift; sourceTree = "<group>"; };
+		2B679B7F211744C700554880 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		2B679B8121174B3500554880 /* Page1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
+		2B679B8321174B4300554880 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		2B679B852117511C00554880 /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
 		3E150129E40169963F025295 /* Pods-HackathonSATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonSATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonSATests/Pods-HackathonSATests.release.xcconfig"; sourceTree = "<group>"; };
 		3ECA17C59741A4F4B3687A40 /* Pods-HackathonSATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonSATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonSATests/Pods-HackathonSATests.debug.xcconfig"; sourceTree = "<group>"; };
 		56ABA428E3C92405B6306EF9 /* Pods_HackathonSAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonSAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +135,12 @@
 				2B67993A211644F100554880 /* LaunchScreen.storyboard */,
 				2B67993D211644F100554880 /* Info.plist */,
 				2B679B7721168F7300554880 /* BathingQualityService.swift */,
+				2B679B7F211744C700554880 /* OnboardingViewController.swift */,
+				2B679B8121174B3500554880 /* Page1ViewController.swift */,
+				2B679B8321174B4300554880 /* Page2ViewController.swift */,
+				2B679B852117511C00554880 /* FirstLaunch.swift */,
+				2B22ECA22117580500EC1A71 /* Onboarding.storyboard */,
+				2B22ECA42117602800EC1A71 /* GPSNotAvailableViewController.swift */,
 			);
 			path = HackathonSA;
 			sourceTree = "<group>";
@@ -279,6 +297,7 @@
 				2B67993C211644F100554880 /* LaunchScreen.storyboard in Resources */,
 				2B679939211644F100554880 /* Assets.xcassets in Resources */,
 				2B679937211644F000554880 /* Main.storyboard in Resources */,
+				2B22ECA32117580500EC1A71 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,8 +408,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B679934211644F000554880 /* ViewController.swift in Sources */,
+				2B22ECA52117602800EC1A71 /* GPSNotAvailableViewController.swift in Sources */,
+				2B679B862117511C00554880 /* FirstLaunch.swift in Sources */,
+				2B679B80211744C800554880 /* OnboardingViewController.swift in Sources */,
+				2B679B8221174B3500554880 /* Page1ViewController.swift in Sources */,
 				2B679932211644F000554880 /* AppDelegate.swift in Sources */,
 				2B679B7821168F7300554880 /* BathingQualityService.swift in Sources */,
+				2B679B8421174B4300554880 /* Page2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
