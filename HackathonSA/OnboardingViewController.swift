@@ -16,7 +16,8 @@ class OnboardingViewController: UIPageViewController {
     fileprivate lazy var pages: [UIViewController] = {
         return [
             self.getViewController(withIdentifier: "Page1"),
-            self.getViewController(withIdentifier: "Page2")
+            self.getViewController(withIdentifier: "Page2"),
+            self.getViewController(withIdentifier: "Page3")
         ]
     }()
     

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -23,50 +23,210 @@
             <objects>
                 <viewController storyboardIdentifier="Page1" id="Qad-W4-cXc" customClass="Page1ViewController" customModule="HackathonSA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e4d-7x-sSm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Page 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjR-mK-wa0">
-                                <rect key="frame" x="139" y="274" width="51" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dj1-1W-OHA">
+                                <rect key="frame" x="55" y="210" width="211" height="358"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.76078431372549016" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.019607843137254902" green="0.32941176470588235" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="oMS-lq-ObS"/>
+                                    <constraint firstAttribute="height" constant="358" id="xwZ-9l-40g"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">recent studies have shown that, due sewage overflow and waste misdisposal, levels of pathogens and bacterial agents are higher in the ocean after a strong storm.  
+expecting you to have the best beach experience in south gfrica, SwimCheck will tell you if it's all good to swim.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="SFProDisplay-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="28">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="56">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="84">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="112">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="140">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="168">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="196">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="224">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="252">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="280">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="308">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="left" location="336">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onb 01" translatesAutoresizingMaskIntoConstraints="NO" id="ESX-P6-H0s">
+                                <rect key="frame" x="147" y="61" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="8HY-1m-12o"/>
+                                    <constraint firstAttribute="height" constant="150" id="EcZ-Kr-fec"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjR-mK-wa0">
+                                <rect key="frame" x="59" y="160" width="86.5" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86.5" id="N4u-OQ-1J6"/>
+                                    <constraint firstAttribute="height" constant="42" id="rHi-Ze-lD8"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="hello,">
+                                        <attributes>
+                                            <font key="NSFont" size="36" name="SFProDisplay-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.019607843137254902" green="0.32941176470588235" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0078431372550000003" green="0.76470588240000004" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SlB-pd-CEu" firstAttribute="bottom" secondItem="dj1-1W-OHA" secondAttribute="bottom" id="3ZY-v4-Xai"/>
+                            <constraint firstItem="EjR-mK-wa0" firstAttribute="top" secondItem="SlB-pd-CEu" secondAttribute="top" constant="140" id="9qR-EC-niM"/>
+                            <constraint firstItem="SlB-pd-CEu" firstAttribute="trailing" secondItem="ESX-P6-H0s" secondAttribute="trailing" constant="23" id="DwW-he-Qcp"/>
+                            <constraint firstItem="ESX-P6-H0s" firstAttribute="top" secondItem="SlB-pd-CEu" secondAttribute="top" constant="41" id="Gpe-KB-t2t"/>
+                            <constraint firstItem="EjR-mK-wa0" firstAttribute="leading" secondItem="SlB-pd-CEu" secondAttribute="leading" constant="59" id="Kuu-MK-AhL"/>
+                            <constraint firstItem="dj1-1W-OHA" firstAttribute="centerX" secondItem="SlB-pd-CEu" secondAttribute="centerX" id="eBv-nc-vOW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SlB-pd-CEu"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXj-nf-QYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1333" y="843"/>
+            <point key="canvasLocation" x="-1807.5" y="840.84507042253517"/>
         </scene>
-        <!--Page2 View Controller-->
+        <!--Page3 View Controller-->
         <scene sceneID="Gy4-Mg-1mA">
             <objects>
-                <viewController storyboardIdentifier="Page2" id="euh-xw-2Su" customClass="Page2ViewController" customModule="HackathonSA" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Page3" id="euh-xw-2Su" customClass="Page3ViewController" customModule="HackathonSA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r40-3z-Nys">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Page 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u96-Sl-MpI">
-                                <rect key="frame" x="139" y="274" width="53" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nm-kG-Rws">
-                                <rect key="frame" x="150" y="408" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="OK"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bwb-a0-0jQ">
+                                <rect key="frame" x="55" y="217" width="211" height="160"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.76078431372549016" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Fdd-Qt-eh8"/>
+                                    <constraint firstAttribute="width" constant="211" id="S4C-1S-lfa"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">finally, you are invited to send us a photo if you see any waste on the water, so that our team can give the beach a score
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="SFCompactText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onb 03" translatesAutoresizingMaskIntoConstraints="NO" id="q1I-iy-GLP">
+                                <rect key="frame" x="85" y="59" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="6Sn-Gb-ffh"/>
+                                    <constraint firstAttribute="width" constant="150" id="uqA-Zb-xKb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0nm-kG-Rws">
+                                <rect key="frame" x="12" y="421" width="297" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="MbV-jT-zcM"/>
+                                    <constraint firstAttribute="width" constant="297" id="XcJ-Ze-ls2"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="all set? let’s get swimming!">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="SFProDisplay-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="28">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="56">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="84">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="112">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="140">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="168">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="196">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="224">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="252">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="280">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="308">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="336">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="finishOnboarding:" destination="euh-xw-2Su" eventType="touchUpInside" id="1mN-hd-X2J"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0078431372550000003" green="0.76470588240000004" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bwb-a0-0jQ" firstAttribute="centerX" secondItem="Tn2-pz-794" secondAttribute="centerX" id="E1e-ll-afe"/>
+                            <constraint firstItem="0nm-kG-Rws" firstAttribute="centerX" secondItem="Tn2-pz-794" secondAttribute="centerX" id="ObO-8r-sx8"/>
+                            <constraint firstItem="Tn2-pz-794" firstAttribute="bottom" secondItem="0nm-kG-Rws" secondAttribute="bottom" constant="86" id="RRK-2R-qdT"/>
+                            <constraint firstItem="q1I-iy-GLP" firstAttribute="centerX" secondItem="Tn2-pz-794" secondAttribute="centerX" id="RbG-na-87f"/>
+                            <constraint firstItem="q1I-iy-GLP" firstAttribute="top" secondItem="Tn2-pz-794" secondAttribute="top" constant="39" id="Zjj-j1-CTh"/>
+                            <constraint firstItem="Tn2-pz-794" firstAttribute="bottom" secondItem="bwb-a0-0jQ" secondAttribute="bottom" constant="191" id="iVL-5N-Fxp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Tn2-pz-794"/>
                     </view>
                     <connections>
@@ -75,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t04-eT-ecv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-255" y="843"/>
+            <point key="canvasLocation" x="-255.19999999999999" y="842.42878560719646"/>
         </scene>
         <!--MainViewController-->
         <scene sceneID="4Sk-5b-nNc">
@@ -85,5 +245,85 @@
             </objects>
             <point key="canvasLocation" x="834" y="843"/>
         </scene>
+        <!--Page2 View Controller-->
+        <scene sceneID="ddM-3Q-xIs">
+            <objects>
+                <viewController storyboardIdentifier="Page2" id="t3p-y8-LmZ" customClass="Page2ViewController" customModule="HackathonSA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sxj-Ik-XsP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onb 02" translatesAutoresizingMaskIntoConstraints="NO" id="fVy-Fa-5yu">
+                                <rect key="frame" x="85" y="191" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="6Jf-m5-1JT"/>
+                                    <constraint firstAttribute="height" constant="150" id="x72-kZ-Hj4"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qoa-3h-vFB">
+                                <rect key="frame" x="55" y="55" width="211" height="128"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.76078431372549016" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.019607843137254902" green="0.32941176470588235" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="Xl8-RX-M5B"/>
+                                    <constraint firstAttribute="height" constant="128" id="iCn-be-ea6"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="SwimCheck ">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="SFProDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="18" name="SFProDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="will let you know how long it's been since the last rain - and how long you'll need to wait before jumping in.">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="SFProDisplay-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BMd-Av-LhI">
+                                <rect key="frame" x="55" y="378" width="211" height="124"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.76078431372549016" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.019607843137254902" green="0.32941176470588235" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="G5D-Zm-pAC"/>
+                                    <constraint firstAttribute="height" constant="124" id="bjT-j7-KKH"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="we also collect the most up-to-date data about water quality level at that specific beach">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="SFProDisplay-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0078431372550000003" green="0.76470588240000004" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BMd-Av-LhI" firstAttribute="centerX" secondItem="TTH-5j-Lnl" secondAttribute="centerX" id="3WU-YV-dWA"/>
+                            <constraint firstItem="qoa-3h-vFB" firstAttribute="centerX" secondItem="TTH-5j-Lnl" secondAttribute="centerX" id="J3p-x8-5sb"/>
+                            <constraint firstItem="fVy-Fa-5yu" firstAttribute="centerX" secondItem="TTH-5j-Lnl" secondAttribute="centerX" id="NAb-up-Z8P"/>
+                            <constraint firstItem="fVy-Fa-5yu" firstAttribute="top" secondItem="TTH-5j-Lnl" secondAttribute="top" constant="171" id="cXN-xg-7yd"/>
+                            <constraint firstItem="qoa-3h-vFB" firstAttribute="top" secondItem="TTH-5j-Lnl" secondAttribute="top" constant="35" id="qBf-wQ-9vq"/>
+                            <constraint firstItem="TTH-5j-Lnl" firstAttribute="bottom" secondItem="BMd-Av-LhI" secondAttribute="bottom" constant="66" id="u5T-RI-wbM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TTH-5j-Lnl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kx5-CE-oWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1028" y="841.52923538230891"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="onb 01" width="1536" height="1536"/>
+        <image name="onb 02" width="1536" height="1536"/>
+        <image name="onb 03" width="1536" height="1536"/>
+    </resources>
 </document>

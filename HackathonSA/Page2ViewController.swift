@@ -21,9 +21,7 @@ class Page2ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func finishOnboarding(_ sender: Any) {
-        performSegue(withIdentifier: "finishOnboardingSegue", sender: nil)
-    }
+
     
     /*
     // MARK: - Navigation
