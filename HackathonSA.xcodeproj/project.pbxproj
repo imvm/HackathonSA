@@ -22,6 +22,9 @@
 		2B679B8221174B3500554880 /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679B8121174B3500554880 /* Page1ViewController.swift */; };
 		2B679B8421174B4300554880 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679B8321174B4300554880 /* Page2ViewController.swift */; };
 		2B679B862117511C00554880 /* FirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B679B852117511C00554880 /* FirstLaunch.swift */; };
+		2BDF49D421177FE800E6A584 /* CheckResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF49D321177FE800E6A584 /* CheckResultViewController.swift */; };
+		2BDF49D62117890D00E6A584 /* BathingSpotDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF49D52117890D00E6A584 /* BathingSpotDetailsViewController.swift */; };
+		2BDF49D82117891800E6A584 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDF49D72117891800E6A584 /* ReportViewController.swift */; };
 		B376A1436980BA0124654176 /* Pods_HackathonSA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40C6434015D5E95CBE6F4CB /* Pods_HackathonSA.framework */; };
 		FAB874B1994595FA9F76F77F /* Pods_HackathonSAUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ABA428E3C92405B6306EF9 /* Pods_HackathonSAUITests.framework */; };
 /* End PBXBuildFile section */
@@ -65,6 +68,9 @@
 		2B679B8121174B3500554880 /* Page1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
 		2B679B8321174B4300554880 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		2B679B852117511C00554880 /* FirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstLaunch.swift; sourceTree = "<group>"; };
+		2BDF49D321177FE800E6A584 /* CheckResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckResultViewController.swift; sourceTree = "<group>"; };
+		2BDF49D52117890D00E6A584 /* BathingSpotDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BathingSpotDetailsViewController.swift; sourceTree = "<group>"; };
+		2BDF49D72117891800E6A584 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		3E150129E40169963F025295 /* Pods-HackathonSATests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonSATests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonSATests/Pods-HackathonSATests.release.xcconfig"; sourceTree = "<group>"; };
 		3ECA17C59741A4F4B3687A40 /* Pods-HackathonSATests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonSATests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonSATests/Pods-HackathonSATests.debug.xcconfig"; sourceTree = "<group>"; };
 		56ABA428E3C92405B6306EF9 /* Pods_HackathonSAUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonSAUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +147,9 @@
 				2B679B852117511C00554880 /* FirstLaunch.swift */,
 				2B22ECA22117580500EC1A71 /* Onboarding.storyboard */,
 				2B22ECA42117602800EC1A71 /* GPSNotAvailableViewController.swift */,
+				2BDF49D321177FE800E6A584 /* CheckResultViewController.swift */,
+				2BDF49D52117890D00E6A584 /* BathingSpotDetailsViewController.swift */,
+				2BDF49D72117891800E6A584 /* ReportViewController.swift */,
 			);
 			path = HackathonSA;
 			sourceTree = "<group>";
@@ -411,8 +420,11 @@
 				2B22ECA52117602800EC1A71 /* GPSNotAvailableViewController.swift in Sources */,
 				2B679B862117511C00554880 /* FirstLaunch.swift in Sources */,
 				2B679B80211744C800554880 /* OnboardingViewController.swift in Sources */,
+				2BDF49D82117891800E6A584 /* ReportViewController.swift in Sources */,
 				2B679B8221174B3500554880 /* Page1ViewController.swift in Sources */,
+				2BDF49D421177FE800E6A584 /* CheckResultViewController.swift in Sources */,
 				2B679932211644F000554880 /* AppDelegate.swift in Sources */,
+				2BDF49D62117890D00E6A584 /* BathingSpotDetailsViewController.swift in Sources */,
 				2B679B7821168F7300554880 /* BathingQualityService.swift in Sources */,
 				2B679B8421174B4300554880 /* Page2ViewController.swift in Sources */,
 			);

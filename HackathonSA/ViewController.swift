@@ -11,16 +11,23 @@ import CoreLocation
 import RxSwift
 import RxCocoa
 import Moya
+import Hero
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     var locationManager: CLLocationManager!
     let disposeBag = DisposeBag()
     
+    @IBOutlet weak var beachImageView: UIImageView!
+    
+    @IBOutlet weak var checkBeachButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        beachImageView.hero.id = "beachIcon"
+        checkBeachButton.hero.id = "beachLabel"
         
         NotificationCenter.default.addObserver(self, selector: #selector(checkLocationPermission), name: Notification.Name.UIApplicationWillEnterForeground, object: nil)
     }
@@ -30,6 +37,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             getCurrentLocation()
         } else {
             let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GPSNotAvailableView") as UIViewController
+            /*
+            let aObjNavi = UINavigationController(rootViewController: viewController)
+            
+            self.present(aObjNavi, animated: true) {
+                
+            }
+            */
+            
+            //self.navigationController?.pushViewController(viewController, animated: false)
             
             self.present(viewController, animated: false, completion: nil)
         }
@@ -87,5 +103,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     {
         print("Error \(error)")
     }
+    
+    @IBAction func checkBeach(_ sender: Any) {
+        performSegue(withIdentifier: "negativeResultSegue", sender: nil)
+    }
+    
 }
 
