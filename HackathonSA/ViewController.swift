@@ -7,19 +7,73 @@
 //
 
 import UIKit
+import CoreLocation
+import RxSwift
+import RxCocoa
+import Moya
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
 
+    var locationManager: CLLocationManager!
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if CLLocationManager.locationServicesEnabled() {
+            getCurrentLocation()
+        } else {
+            let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GPSNotAvailableView") as UIViewController
+            
+            self.present(viewController, animated: false, completion: nil)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func getCurrentLocation() {
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        locationManager.requestLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let userLocation:CLLocation = locations[0] as CLLocation
+        
+        let latitude = userLocation.coordinate.latitude
+        let longitude = userLocation.coordinate.longitude
+        
+        print("user latitude = \(latitude)")
+        print("user longitude = \(longitude)")
 
-
+        let provider = MoyaProvider<BathingQualityService>()
+        provider.rx.request(.getNearestBathingSpots(latitude: latitude, longitude: longitude))
+            .filterSuccessfulStatusCodes()
+            .mapJSON()
+            .subscribe({ event in
+            switch event {
+            case .success(let json):
+                print(json)
+            case .error(let error):
+                print(error)
+            }
+        })
+        .disposed(by: disposeBag)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error)
+    {
+        print("Error \(error)")
+    }
 }
 
