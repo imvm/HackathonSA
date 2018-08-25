@@ -10,11 +10,19 @@
 import UIKit
 
 class ReportViewController: UIViewController {
-
+   
+    @IBOutlet weak var textField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        textField.layer.borderWidth = 1.0
+        textField.layer.borderColor = UIColor.lightGray.cgColor
+        
+
     }
 
     override func didReceiveMemoryWarning() {

@@ -6,49 +6,99 @@
 	<dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
+<<<<<<< Updated upstream
+=======
+			<key>isShown</key>
+			<false/>
+>>>>>>> Stashed changes
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
 		<key>Hero.xcscheme</key>
 		<dict>
+<<<<<<< Updated upstream
+=======
+			<key>isShown</key>
+			<false/>
+>>>>>>> Stashed changes
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
 		<key>Moya.xcscheme</key>
 		<dict>
+<<<<<<< Updated upstream
+=======
+			<key>isShown</key>
+			<false/>
+>>>>>>> Stashed changes
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
 		<key>Pods-HackathonSA.xcscheme</key>
 		<dict>
+<<<<<<< Updated upstream
+=======
+			<key>isShown</key>
+			<false/>
+>>>>>>> Stashed changes
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
 		<key>Pods-HackathonSATests.xcscheme</key>
 		<dict>
+<<<<<<< Updated upstream
+=======
+			<key>isShown</key>
+			<false/>
+>>>>>>> Stashed changes
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
 		<key>Pods-HackathonSAUITests.xcscheme</key>
 		<dict>
+<<<<<<< Updated upstream
+=======
+			<key>isShown</key>
+			<false/>
+>>>>>>> Stashed changes
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
 		<key>Result.xcscheme</key>
 		<dict>
+<<<<<<< Updated upstream
+=======
+			<key>isShown</key>
+			<false/>
+>>>>>>> Stashed changes
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
 		<key>RxCocoa.xcscheme</key>
 		<dict>
+<<<<<<< Updated upstream
+=======
+			<key>isShown</key>
+			<false/>
+>>>>>>> Stashed changes
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
 		<key>RxSwift.xcscheme</key>
 		<dict>
+<<<<<<< Updated upstream
+=======
+			<key>isShown</key>
+			<false/>
+>>>>>>> Stashed changes
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
 	</dict>
+<<<<<<< Updated upstream
+=======
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
+>>>>>>> Stashed changes
 </dict>
 </plist>

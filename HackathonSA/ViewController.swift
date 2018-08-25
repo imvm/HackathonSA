@@ -105,7 +105,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func checkBeach(_ sender: Any) {
-        performSegue(withIdentifier: "negativeResultSegue", sender: nil)
+        performSegue(withIdentifier: "positiveResultSegue", sender: nil)
     }
     
 }
